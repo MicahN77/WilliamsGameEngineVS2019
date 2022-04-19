@@ -1,6 +1,9 @@
 #include "Engine/GameEngine.h"
 #include "GameScene.h"
 #include "Ship.h"
+#include "Laser.h"
+#include "Meteor.h"
+#include "Explosion.h"
 
 const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 600;
