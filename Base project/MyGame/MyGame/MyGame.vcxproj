@@ -92,6 +92,7 @@
     <ClCompile Include="Meteor.cpp" />
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -105,15 +106,20 @@
     <ClInclude Include="Laser.h" />
     <ClInclude Include="Meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
+    <ClInclude Include="Score.h" />
     <ClInclude Include="Ship.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Resources\explosion-spritesheet.png" />
     <Image Include="Resources\laser.png" />
     <Image Include="Resources\meteor.png" />
     <Image Include="Resources\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\boom.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

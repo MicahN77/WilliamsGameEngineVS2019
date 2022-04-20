@@ -9,5 +9,15 @@ GameScene::GameScene()
 
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
 	addGameObject(meteorSpawner);
+
+	int GameScene::getScore()
+	{
+		return score_;                      //what????? collisions+ hasn't worked. this was where I left off.
+	}
+
+	void GameScene::increaseScore()
+	{
+		++score_;
+	}
 }
 
