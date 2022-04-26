@@ -1,6 +1,7 @@
 #include "GameScene.h"
 #include "Ship.h"
 #include "MeteorSpawner.h"
+#include "Score.h"
 
 GameScene::GameScene()
 {
@@ -10,14 +11,16 @@ GameScene::GameScene()
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
 	addGameObject(meteorSpawner);
 
-	/*int GameScene::getScore()
-	{
-		return score_;                      //what????? collisions+ hasn't worked. this was where I left off.
-	}
+	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
+	addGameObject(score);
 
-	void GameScene::increaseScore()
-	{
-		++score_;
-	}*/
+	
 }
-
+int GameScene::getScore()
+{
+	return score_;
+}
+void GameScene::increaseScore()
+{
+	++score_;
+}
